@@ -10,22 +10,31 @@
 //     console.log('Fizz')
 // }
 
+let idbox = document.getElementById('box');
 
-for ( x = 1; x <= 100; x++ ){
-    
-    if ( x % 3 == 0 && x % 5 == 0 ){
-        console.log(`FizzBuzz`)
-    }
+for (x = 1; x <= 100; x++) {
 
-    if ( x % 3 == 0 ) {
-        console.log(`Fizz`)
-    }
-    else if ( x % 5 == 0 ){
-        console.log(`Buzz`)
-    }
-    
-    else{
-        console.log(`${x}`)
+    let divNuovo = document.createElement('div')
+    divNuovo.classList.add('quadrati')
+
+    if (x % 3 == 0 && x % 5 == 0) {
+        divNuovo.innerText = 'FizzBuzz';
+        divNuovo.classList.add('quadrati', 'quadrati-viola')
     }
 
+    else if (x % 3 == 0) {
+        divNuovo.innerText = 'Fizz';
+        divNuovo.classList.add('quadrati', 'quadrati-verde')
+    }
+    else if (x % 5 == 0) {
+        divNuovo.innerText = 'Buzz';
+        divNuovo.classList.add('quadrati', 'quadrati-giallo')
+    }
+
+    else {
+        divNuovo.innerText = `${x}`;
+        divNuovo.classList.add('quadrati', 'quadrati-blue')
+    }
+
+    box.append(divNuovo)
 }

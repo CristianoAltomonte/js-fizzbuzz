@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(8, 59, 76, 1);
+    
+}
+
+.quadrati{
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.quadrati-viola{
+    background-color: rgba(240, 70, 111, 1);
+}
+
+.quadrati-giallo{
+    background-color: rgba(255, 209, 102, 1)
+}
+
+.quadrati-verde{
+    background-color: rgba(12, 214, 161, 1);
+}
+
+.quadrati-blue{
+    background-color: rgba(19, 137, 178, 1);
+}
